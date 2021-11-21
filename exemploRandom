@@ -1,4 +1,5 @@
-algoritmo sorteio // algoritmo que faz um sorteio de 0 a 100 
+// algoritmo que faz um sorteio de 0 a 100 \
+algoritmo sorteio 
 inteiro numero, sorteado, i 
 sorteado = rand(100)
 para (i=0; i == 100; i++){ 
