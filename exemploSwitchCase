@@ -1,0 +1,56 @@
+inicio escolhaCaso
+	literal cargo
+	real salarioAtual,novoSalario, percentual 
+	inteiro codigo
+	escreva ("digite o seu salario atual:" )
+	leia (salarioAtual)
+	escreva ("Digite o codigo correspondente ao cargo: ")
+	leia (codigo)
+	escolha (codigo) {
+		caso 1: cargo = Escriturário, Percentual = 50%
+		pare
+		caso 2: cargo = Secretario, Percentual = 35%
+		pare
+		caso 3: cargo = Caixa, Percentual = 20%
+		pare
+		caso 4: cargo = Gerente, Percentual = 10%
+		pare 
+		caso 5: cargo = Diretor
+		pare 
+	}
+	se ( caso > 5 ) {
+			escreva (" codigo incorreto")
+		}
+	senão {
+			novoSalario = salarioAtual * Percentual
+			escreva (" Seu novo cargo é: " + cargo + "e seu novo salario é:" + novoSalario)		
+	}
+		se ( caso == 5 ) {
+		escreva (" seu novo cargo é " + cargo + " e nao hávera aumento")
+		}
+fim 
+ 
+//ou da pra fazer assim 
+
+
+		caso 1:
+		cargo = "Escriturário"
+		Percentual = salarioAtual * 35/100
+		pare
+		caso 2:
+		cargo = "Secretario"
+		Percentual = salarioAtual * 35/100
+		pare
+		caso 3:
+		cargo = "Caixa"
+		Percentual = salarioAtual * 35/100
+		pare
+		caso 4:
+		cargo = "Gerente"
+		Percentual = salarioAtual * 35/100
+		pare 
+		caso 5: cargo = Diretor
+		percentual = 0
+		pare 
+	}
+	novoSalario = salarioAtual + percentual

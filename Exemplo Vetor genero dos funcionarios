@@ -1,0 +1,52 @@
+// Elabore um algoritmo que leia os nomes, generos e salarios dos trabalhadores de uma empresa e armazene dentro de vetores.
+depois, em ciclos independentes:
+Calcule a media dos salarios das mulheres da empresa
+Determine o menor dos salarios desta empresa e visualize os dados deste trabalhador(suponha um menor valor unico)
+Conte os homens que ganham mais de 1000 \ 
+algoritmo generoFuncionario
+inicio 
+	inteiro i,contMulher,salarioMulher,contHomem, contTrabalhadores
+	real vetSalario[contTrabalhadores], media, menorSalario
+	literal vetNome[contTrabalhadores], vetGenero[contTrabalhadores], menorNome, menorGenero
+	escreva ("Digite a quantidade de trabalhadores: ")
+	leia (contTrabalhadores)
+	salarioMulher = 0
+	para ( i = 0; i < contTrabalhadores; i++){
+		escreva ("Digite o nome do funcionario " + (i+1) + ":")
+		leia (vetNome[i])
+		escreva ("Digite o genero do funcionario " + (i+1) + " (homem/mulher):")
+		leia (vetGenero[i])
+		escreva ("Digite o salarios do funcionario " + (i+1) + ":")
+		leia (vetSalario[i])	
+		}
+	}
+	para (i = 0; i < contTrabalhadores; i++){
+		se ( vetGenero[i] == "mulher"){
+			contMulher++
+			salarioMulher = salarioMulher + vetSalario[i]
+		}
+	}
+	media = salarioMulher / contMulher
+	escreva ("A media salarial das mulheres da empresa é: " + media)
+	
+	menorSalario = 1000
+	menorGenero = ""
+	menorNome = "" // ou posso criar uma variavel chamada " posMenorSalario" e dentro do faça, colocar posMenorSalario = i. \
+	// ai depois coloco no vetor[posMenorSalario] \
+	para (i = 0; i < contTrabalhadores; i++){
+		se (menorSalario < vetSalario[i]){
+			menorSalario = vetSalario[i]
+			menorGenero = vetGenero[i]
+			menorNome = vetNome[i]
+		}
+	}
+	escreva ("O menor salario da empresa é de: " + menorSalario + " do funcionario: " + menorNome + " do genero: " + menorGenero)
+	
+	contHomem = 0
+	para (i = 0; i < contTrabalhadores; i++){
+		se ( vetGenero[i] == "homem" e vetSalario > 1000 ){
+			contHomem++
+			}
+	escreva ("A quantidade de homens que ganham mais de 1000 é: " + contHomem)
+fim 
+	

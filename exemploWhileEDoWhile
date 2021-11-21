@@ -1,0 +1,66 @@
+Exemplos while
+algoritmo exemploWhile // calcula e mostre a media de duas notas de 10 alunos
+inicio
+	real nota1, nota2, media
+	inteiro cont
+	cont=1
+	enquanto (cont<=10) {
+		escreva ("Digite a primeira nota: ")
+		leia (nota1)
+		escreva ("Digite a segunda nota: ")
+		leia (nota2)
+		media = (nota1+nota2)/2
+		escreva("A media é" + media)
+		cont = cont+1
+	}
+fim 
+
+algoritmo exemploWhile2 // calcula e mostra a media de uma quantidade indeterminada
+inicio 
+	real media
+	inteiro numero, soma , cont
+	literal opcao
+	cont = 0
+	soma = 0
+	opcao = "sim"
+	enquanto (opcao == "sim") {
+		escreva ("Digite um numero inteiro: ")
+		leia (numero)
+		soma = soma + numero 
+		cont++
+		escreva ("Deseja continuar? (sim/não")
+		leia (opcao)
+	}
+	media = soma / cont
+fim 
+
+// A diferença do do while pro while, é que o do while é executado pelo menos uma vez, mesmo que a condição seja falsa.
+
+algoritmo exemploDoWhile //algotimo que calcula e mostra a soma dos numeros impares
+inicio 
+	inteiro num, soma
+	soma = 0
+	faça {
+		escreva ("Digite um numero")
+		leia (num)
+		se (num % 2!= 0) { // esse "!" significa diferente, ou seja, nesse significa diferente de zero
+			soma = soma+num
+		}
+	}	enquanto (num!=0)
+	escreva ("A soma dos numeros impares é :" + soma )
+fim	
+
+algoritmo exemploDoWhile2 // algoritmo que solicita um numero ao usuario, calcula e mostra o quadrado para cada numero 
+inicio 
+	real quadrado
+	inteiro quant, numero
+	escreva ( "digite uma quantidade de quadrados que serão calculados: ")
+	leia (quant)
+	numero = 0
+	faça {
+		quadrado = numero * numero
+		escreva ("Quadrado de " + numero + "=" + quadrado)
+		numero++
+	} enquanto ( numero <= quant)
+fim 
+		

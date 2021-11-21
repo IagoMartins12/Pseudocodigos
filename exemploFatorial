@@ -1,0 +1,25 @@
+algoritmo fatorial // algoritmo que calcula o fatorial de um numero informado pelo usuario 
+inicio 
+	inteiro numero, resultado, i
+	resultado = 1
+	escreva ("Digite um numero: ") 
+	leia (numero)
+	para (i = 1; i <= numero; i++){
+		resultado = resultado * i 
+	}
+	escreva ("O resultado do fatorial do numero informado é: " + resultado)
+fim 
+
+algoritmo fatorial // agora vou limitar o mesmo algoritmo
+inicio 
+	inteiro numero, resultado, i
+	resultado = 1
+	faça {
+	escreva ("Digite um numero: ") 
+	leia (numero)
+	} enquanto (numero > 20 ou numero < 0)
+	para (i = 1; i <= numero; i++){
+		resultado = resultado * i 
+	}
+	escreva ("O resultado do fatorial do numero informado é: " + resultado)
+fim 

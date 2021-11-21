@@ -1,0 +1,39 @@
+algoritmo sorteio // algoritmo que faz um sorteio de 0 a 100 
+inteiro numero, sorteado, i 
+sorteado = rand(100)
+para (i=0; i == 100; i++){ 
+	escreva ("Digite um numero: ")
+	leia (numero)
+	se ( numero < sorteado ){
+		escreva ("O numero que vc digitou é menor que o numero sorteado")
+	}
+	senão {
+		se ( numero > sorteado) {
+			escreva ("O numero que vc digitou é maior que o numero sorteado")
+		}
+		senão {
+			escreva ("Parabéns!! vc acertou o numero sorteado")
+		}
+	}
+fim 
+
+// Essa versao do professor 
+algoritmo adivinhaNumero
+inicio 
+	inteiro sorteado, digitando
+	sorteado = rand(100)
+	faça {
+		escreva ("Digite um numero")
+		leia (digitando)
+		se (digitando < sorteado) {
+			escreva ("O numero que vc digitou é menor que o numero sorteado")
+		}
+		senão {
+		se ( numero > sorteado) {
+			escreva ("O numero que vc digitou é maior que o numero sorteado")
+		}
+	  }
+	  cont++
+	} enquanto (Digitado != sorteado)
+	escreva ("Parabéns!! vc acertou o numero sorteado")
+fim 

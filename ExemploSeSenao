@@ -1,0 +1,44 @@
+algoritmo anoNascimento
+inicio 
+	inteiro anoNasc, anoAtual, idade
+	escreva ("Digite o ano do seu nascimento: ")
+	leia (anoNasc)
+	escreva ("Digite o ano atual: ")
+	leia (anoAtual)
+	idade = anoNasc - anoAtual
+	escreva ("Sua idade é : " + idade )
+	se (idade < 16) {
+		escreva (" Você não pode votar, nem tirar a carteira de habilitação")
+	}
+	senão {
+		se (idade >= 16 e < 18) {
+			escreva (" Você pode votar, mas nao pode tirar a carteira de habilitação")
+			}
+		senão {
+			escreva (" Você pode votar e tirar a carteira de habilitação")
+		}
+	}
+fim 
+
+ ou da pra fazer assim 
+ 
+ algoritmo anoNascimento
+inicio 
+	inteiro anoNasc, anoAtual, idade
+	escreva ("Digite o ano do seu nascimento: ")
+	leia (anoNasc)
+	escreva ("Digite o ano atual: ")
+	leia (anoAtual)
+	idade = anoNasc - anoAtual
+	escreva ("Sua idade é : " + idade )
+	se (idade >= 16) {
+		escreva (" Ja tem idade pra votar ")
+		se ( idade >= 18) {
+			escreva ("Ja tem idade pra tirar a cnh)
+		} senão {
+			escreva ("Nao tem idade pra tirar a cnh)
+		}
+	} senão {
+		escreva ("Nao tem idade pra votar e nem tirar a cnh") 
+	}
+fim 

@@ -1,0 +1,26 @@
+// faça um algoritmo que peça 10 numeros inteiros, armazene em um vetor, divida pelo maior numero entre eles
+Depois armazene o resultado no mesmo vetor. \
+algoritmo vetor10Numeros 
+inicio
+	inteiro i, vetNumeros[10], maiorValor
+	
+	para (i = 0; i < 10; i++){
+		escreva ("Digite um numero inteiro: ")
+		leia (vetNumeros[i])
+	}
+	
+	maiorValor = vetNumeros[0]
+	para (i = 0; i < 10; i++){
+		se (vetNumeros[i] > maiorValor){
+			maiorValor = vetNumeros [i]
+		}
+	}
+	
+	para (i = 0; i < 10;i++){
+		vetNumeros[i] = vetNumeros[i] / maiorValor
+	}
+	
+	para (i = 0; i < 10;i++){
+		escreva (vetNumeros[i])
+	}
+fim 
