@@ -1,8 +1,8 @@
-// Elabore um algoritmo que leia os nomes, generos e salarios dos trabalhadores de uma empresa e armazene dentro de vetores.
+// Algoritmo que lê os nomes, generos e salarios dos trabalhadores de uma empresa e armazene dentro de vetores.
 depois, em ciclos independentes:
-Calcule a media dos salarios das mulheres da empresa
-Determine o menor dos salarios desta empresa e visualize os dados deste trabalhador(suponha um menor valor unico)
-Conte os homens que ganham mais de 1000 \ 
+Calcula a media dos salarios das mulheres da empresa
+Determina o menor dos salarios desta empresa e visualiza os dados deste trabalhador
+Conta os homens que ganham mais de 1000 \ 
 algoritmo generoFuncionario
 inicio 
 	inteiro i,contMulher,salarioMulher,contHomem, contTrabalhadores
