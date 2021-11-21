@@ -1,4 +1,4 @@
-// algoritmo que leia salario de 10 funcionarios e armazene dentro de um vetor, depois mostre:
+// algoritmo que lê o salario de 10 funcionarios, armazenea dentro de um vetor, depois mostra:
 a) a media dos salarios
 b) o maior salario da empresa
 c) os salarios menores que 850 \ 
