@@ -1,5 +1,5 @@
-Exemplos while
-algoritmo exemploWhile // calcula e mostre a media de duas notas de 10 alunos
+// algoritmo que calcula e mostre a media de duas notas de 10 alunos
+algoritmo exemploWhile 
 inicio
 	real nota1, nota2, media
 	inteiro cont
