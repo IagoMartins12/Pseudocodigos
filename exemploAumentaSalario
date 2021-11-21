@@ -1,4 +1,5 @@
-algoritmo aumentoFuncionario // algoritmo que recebe o nome e o salario do funcionario, e mostra o valor do reajuste
+// algoritmo que recebe o nome e o salario do funcionario, e mostra o valor do reajuste \
+algoritmo aumentoFuncionario 
 inicio 
 	literal nome
 	real salario, reajuste 
