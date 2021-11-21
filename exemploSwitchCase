@@ -1,4 +1,6 @@
-inicio escolhaCaso
+// algoritmo que recebe o salario atual, o cargo do funcionario, e retorna o novo salario apos o aumento do mesmo \
+algoritmo escolhaCaso
+inicio
 	literal cargo
 	real salarioAtual,novoSalario, percentual 
 	inteiro codigo
