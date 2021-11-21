@@ -1,3 +1,4 @@
+// Algoritmo que recebe o ano de nascimento do usuario, compara com o ano atual e dependendo do resultado, mostra se o usuario pode tirar a carteira de habilitação e votar \
 algoritmo anoNascimento
 inicio 
 	inteiro anoNasc, anoAtual, idade
