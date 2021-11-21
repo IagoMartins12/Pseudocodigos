@@ -1,4 +1,5 @@
-algoritmo fatorial // algoritmo que calcula o fatorial de um numero informado pelo usuario 
+// algoritmo que calcula o fatorial de um numero informado pelo usuario \
+algoritmo fatorial 
 inicio 
 	inteiro numero, resultado, i
 	resultado = 1
