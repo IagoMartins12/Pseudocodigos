@@ -1,5 +1,5 @@
-// faça um algoritmo que peça 10 numeros inteiros, armazene em um vetor, divida pelo maior numero entre eles
-Depois armazene o resultado no mesmo vetor. \
+// Algoritmo que recebe 10 numeros inteiros, armazena em um vetor, divide pelo maior numero entre eles
+Depois armazena o resultado no mesmo vetor. \
 algoritmo vetor10Numeros 
 inicio
 	inteiro i, vetNumeros[10], maiorValor
